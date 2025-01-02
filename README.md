@@ -93,6 +93,9 @@ npm run dev
 
 You can access the Weather API at `http://localhost:3000/api/activity?city=London`
 
+![image](https://github.com/user-attachments/assets/0b193dcc-e9aa-45e7-a257-bbd31efe5561)
+
+
 ### Running Tests
 
 To run the tests:
