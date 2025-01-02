@@ -12,5 +12,6 @@ export interface WeatherData {
 
   export interface WeatherResponse {
     weather: { description: string }[];
+    abcd
     main: { temp: number };
   }
