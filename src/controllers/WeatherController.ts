@@ -1,7 +1,7 @@
-import { Request, Response } from 'express';
-import { WeatherService } from '../services/WeatherService';
-import { OpenAIService } from '../services/OpenAIService';
-import { ActivityResponse } from '../interfaces/WeatherInterface';
+import { Request, Response } from "express";
+import { WeatherService } from "../services/WeatherService";
+import { OpenAIService } from "../services/OpenAIService";
+import { ActivityResponse } from "../interfaces/WeatherInterface";
 
 export class WeatherController {
   private weatherService: WeatherService;
@@ -15,14 +15,16 @@ export class WeatherController {
   async getActivity(req: Request, res: Response): Promise<void> {
     const { city } = req.query;
 
-    if (!city || typeof city !== 'string') {
-      res.status(400).json({ error: 'City is required and must be a string' });
+    if (!city || typeof city !== "string") {
+      res.status(400).json({ error: "City is required and must be a string" });
       return;
     }
 
     try {
       const weatherData = await this.weatherService.getWeather(city);
-      const activity = await this.openAIService.getAIResponse(weatherData.description);
+      const activity = await this.openAIService.getAIResponse(
+        weatherData.description,
+      );
 
       const response: ActivityResponse = {
         city,
