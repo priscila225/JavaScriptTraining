@@ -88,10 +88,10 @@ OPENAI_API_KEY=#get your open ai api key here free account: https://platform.ope
 To start the server:
 
 ```bash
-npm start
+npm run dev
 ```
 
-You can access the Weather API at `http://localhost:3000/api/activity`.
+You can access the Weather API at `http://localhost:3000/api/activity?city=London`
 
 ### Running Tests
 
