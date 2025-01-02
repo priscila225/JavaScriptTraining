@@ -88,10 +88,13 @@ OPENAI_API_KEY=#get your open ai api key here free account: https://platform.ope
 To start the server:
 
 ```bash
-npm start
+npm run dev
 ```
 
-You can access the Weather API at `http://localhost:3000/api/activity`.
+You can access the Weather API at `http://localhost:3000/api/activity?city=London`
+
+![image](https://github.com/user-attachments/assets/0b193dcc-e9aa-45e7-a257-bbd31efe5561)
+
 
 ### Running Tests
 
@@ -127,5 +130,8 @@ To run the tests:
 ```bash
 npx jest
 ```
+
+![image](https://github.com/user-attachments/assets/bd004c6e-ca46-4b4d-a27a-72f360ed8189)
+
 
 This will run all the tests and output the results in the terminal.
