@@ -1,2 +1,2 @@
-# -JavaScriptTraining
+# JavaScriptTraining
 Chapter 7
