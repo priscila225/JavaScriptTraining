@@ -1,6 +1,6 @@
 # JavaScriptTraining
 
-Chapter 7
+Phase 7
 
 # Weather Service API
 
