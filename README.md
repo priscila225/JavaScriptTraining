@@ -128,4 +128,7 @@ To run the tests:
 npx jest
 ```
 
+![image](https://github.com/user-attachments/assets/bd004c6e-ca46-4b4d-a27a-72f360ed8189)
+
+
 This will run all the tests and output the results in the terminal.
