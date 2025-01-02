@@ -1,7 +1,6 @@
 {
   "name": "phase7",
   "version": "1.0.0",
-  "main": "index.js",
   "scripts": {
     "test": "jest",
     "dev": "ts-node src/server.ts"
