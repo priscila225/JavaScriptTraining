@@ -1,4 +1,3 @@
-// src/interfaces/OpenAIInterfaces.ts
 export interface OpenAIResponse {
     id: string;
     object: string;
