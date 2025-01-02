@@ -6,6 +6,7 @@ export interface WeatherData {
   export interface ActivityResponse {
     city: string;
     weather: string;
+    abcd
     temperature: number;
     activity: string;
   }
