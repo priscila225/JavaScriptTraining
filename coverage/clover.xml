@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1735829204047" clover="3.2.0">
-  <project timestamp="1735829204047" name="All files">
+<coverage generated="1735830030249" clover="3.2.0">
+  <project timestamp="1735830030249" name="All files">
     <metrics statements="18" coveredstatements="18" conditionals="4" coveredconditionals="4" methods="4" coveredmethods="4" elements="26" coveredelements="26" complexity="0" loc="18" ncloc="18" packages="1" files="2" classes="2"/>
-    <file name="OpenAIService.ts" path="C:\Users\prisc\Hearst\phase7\src\services\OpenAIService.ts">
+    <file name="OpenAIService.ts" path="C:\Users\prisc\JavaScriptTraining\src\services\OpenAIService.ts">
       <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
       <line num="1" count="1" type="stmt"/>
       <line num="4" count="1" type="stmt"/>
@@ -13,7 +13,7 @@
       <line num="28" count="1" type="stmt"/>
       <line num="30" count="1" type="stmt"/>
     </file>
-    <file name="WeatherService.ts" path="C:\Users\prisc\Hearst\phase7\src\services\WeatherService.ts">
+    <file name="WeatherService.ts" path="C:\Users\prisc\JavaScriptTraining\src\services\WeatherService.ts">
       <metrics statements="10" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
       <line num="1" count="1" type="stmt"/>
       <line num="4" count="1" type="stmt"/>

@@ -11,10 +11,12 @@ export class OpenAIService {
   public async getAIResponse(prompt: string): Promise<string> {
     try {
       const response = await axios.post<OpenAIResponse>(
-        'https://api.openai.com/v1/completions',
+        'https://api.openai.com/v1/chat/completions',
         {
-          model: 'text-davinci-003', // or another model like 'gpt-3.5-turbo'
-          prompt: prompt,
+          model: 'gpt-3.5-turbo', 
+          messages: [
+            { role: 'user', content: prompt },
+          ],
           max_tokens: 100,
         },
         {
@@ -24,9 +26,14 @@ export class OpenAIService {
         }
       );
 
-      const data = response.data; // TypeScript now knows `data` is `OpenAIResponse`
-      return data.choices[0].text.trim();
+      const data = response.data;
+      return data.choices[0].message.content.trim(); 
     } catch (error) {
+      if (axios.isAxiosError(error)) {
+        console.error('Axios Error:', error.response?.data || error.message);
+      } else {
+        console.error('Unexpected Error:', error);
+      }
       throw new Error('Failed to fetch response from OpenAI');
     }
   }
